@@ -1,0 +1,11 @@
+.intro {
+    background: url("bkgd2.png");
+    height: 200px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.container-fluid {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
