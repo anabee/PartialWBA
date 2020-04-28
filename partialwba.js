@@ -39,9 +39,9 @@ $("form").on("submit", function(e){
     $(percentageReduced).text(percentRed+"%")
 
     function stateFunc(){
-        if (inputState = "California (CA)"){
+        if (inputState.val() == "California (CA)"){
             californiaCalc();
-        } else if (inputState = "New Jersey (NJ)"){
+        } else if (inputState.val() == "New Jersey (NJ)"){
             newJerseyCalc();
         }
     }
