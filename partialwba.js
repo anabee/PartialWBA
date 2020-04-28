@@ -38,9 +38,15 @@ $("form").on("submit", function(e){
     percentRed = (redWages / origWages) * 100
     $(percentageReduced).text(percentRed+"%")
 
-    if (inputState = "New Jersey (NJ)"){
-        newJerseyCalc();
+    function stateFunc(){
+        if (inputState = "California (CA)"){
+            californiaCalc();
+        } else if (inputState = "New Jersey (NJ)"){
+            newJerseyCalc();
+        }
     }
+    stateFunc();
+
 })
 
 // ************** CALIFORNIA *********************
