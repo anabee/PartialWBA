@@ -44,6 +44,9 @@ $("form").on("submit", function(e){
         } else if (inputState.val() == "New Jersey (NJ)"){
             newJerseyCalc();
         }
+        else if (inputState.val() == "Nevada (NV)"){
+            nevadaCalc();
+        }
     }
     stateFunc();
 
@@ -169,5 +172,52 @@ function newJerseyCalc(){
     njEstimatedPWBA.text("Estimated Partial Weekly Benefit Amount: $" +estWBANJ);
     stimulusAmntNJ.text("Estimated Partial WBA with CARES Act: $"+careAmntNJ)
     stimulusNoteNJ.text("**An additional $600 to each PUA weekly benefit amount you may be eligible to receive, as part of the separate CARES Act Pandemic Additional Compensation program. Only the weeks of a claim between March 29 and July 25* are eligible for the extra $600 payments.");
+
+}
+
+// ************** NEVADA *********************
+function nevadaCalc(){
+    var wbaCalcNV
+    function wbaCalcNV() {
+        if ((quarterlyCalc * 0.04) <= 427){
+        return wbaCalcNV= (quarterlyCalc * 0.04)
+        } else {
+        return wbaCalcNV= 427
+        }
+    };
+    wbaCalcNV();  
+    console.log(wbaCalcNV)
+
+    var weeklyearningsNV = redWages;
+
+    var estWBANV 
+    function estimatedWbaNV(){
+        estWBANV = wbaCalcNV - (weeklyearningsNV*0.75)
+    };
+    estimatedWbaNV();
+    console.log (estWBANV);
+
+    var careAmntNV = estWBANV+ 600;
+
+    var wbaDivNV = $("<div>");
+    var nvWBA = $("<p>");
+    var nvCrrntEarnings = $("<p>");
+    var nvEstimatedPWBA = $("<h4>");
+    var stimulusAmntNV = $("<h6>");
+    var stimulusNoteNV = $("<p>");
+
+    wbaDivNV.append(nvWBA);
+    wbaDivNV.append(nvCrrntEarnings);
+    wbaDivNV.append(nvEstimatedPWBA);
+    wbaDivNV.append(stimulusAmntNV);
+    wbaDivNV.append(stimulusNoteNV);
+
+    cardHoldingDiv.append(wbaDivNV);
+
+    nvWBA.text("Weekly Benefit Amount: $" +wbaCalcNV);
+    nvCrrntEarnings.text("Weekly Earnings: $" +weeklyearningsNV);
+    nvEstimatedPWBA.text("Estimated Partial Weekly Benefit Amount: $" +estWBANV);
+    stimulusAmntNV.text("Estimated Partial WBA with CARES Act: $"+careAmntNV)
+    stimulusNoteNV.text("**An additional $600 to each PUA weekly benefit amount you may be eligible to receive, as part of the separate CARES Act Pandemic Additional Compensation program. Only the weeks of a claim between March 29 and July 25* are eligible for the extra $600 payments.");
 
 }
