@@ -1,5 +1,6 @@
 .intro {
-    background: url("./images/bkgd2.png");
+    /* background: url("./images/bodybkg.png"); */
+    /* background-color: #21a5a4!important; */
     height: 150px;
     text-align: center;
     font-size: 26px;
@@ -67,6 +68,9 @@ a {
 
 .pageContentInfo {
     font-size: 21px;
+    padding: 10px;
+    background-color: #fff!important;
+    border-radius: 10px;
 }
 
 .pageContentTables {

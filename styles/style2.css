@@ -1,0 +1,25 @@
+body {
+    background-image: url("./images/bodybkg.png")
+}
+
+tr {
+ background-color: #fff!important;
+}
+
+thead {
+    border-radius: 25px!important;
+}
+
+form {
+    padding: 10px;
+    background-color: #fff!important;
+    border-radius: 10px;
+}
+
+.leftThead{
+    border-radius: 10px 0 0 0;
+}
+
+.rightThead{
+    border-radius: 0 10px 0 0;
+}
