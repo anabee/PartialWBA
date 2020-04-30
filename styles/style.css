@@ -1,8 +1,10 @@
 .intro {
     background: url("./images/bkgd2.png");
-    height: 200px;
+    height: 150px;
     text-align: center;
-    font-size: 36px;
+    font-size: 26px;
+    padding: 50px 0;
+    margin-top: 15px;
 }
 
 .container-fluid {
@@ -12,4 +14,50 @@
 
 .hide {
     display: none!important;
+}
+
+.theadCol {
+    background-color: #21a5a4!important;
+}
+
+.btnColor {
+    background-color: #21a5a4!important;
+    border-color:  #21a5a4!important;
+}
+
+.calcStepsInfo {
+    color: #21a5a4!important;
+}
+
+a {
+    color: #000!important;
+}
+
+.cardIndex {
+    height: 465px!important;
+}
+
+.dropDownTitle {
+    text-align: left!important;
+    background-color: #ffffff!important;
+}
+
+.headerTitle {
+    padding-right: 70%;
+    color: #000!important;
+}
+
+.dropdownMenuColor {
+    background-color: #fff!important;
+}
+
+.navBarBtnStyle {
+    background-color: #21a5a4!important;
+    border-color: #21a5a4!important;
+}
+
+.forcecol {
+    text-align: center!important;
+    align-items: center!important;
+    justify-content: center!important;
 }

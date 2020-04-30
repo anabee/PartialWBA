@@ -5,25 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/0b5f1c4663.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Agency Contacts</title>
 </head>
 <body>
 
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Made Easy: Unemployment</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="wba.html">Weekly Benefit Amounts</a>
-                <a class="nav-item nav-link active" href="partialwba.html">Partial Benefit Amounts</a>
-                <a class="nav-item nav-link active" href="contacts.html">State Contacts</a>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4 dropdownMenuColor">
+                <h5 class="text-white h4">
+                    <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </h5>
+                <span class="text-muted">
+                    <a class="nav-item nav-link active" href="wba.html">Weekly Benefit Amounts</a>
+                    <a class="nav-item nav-link active" href="partialwba.html">Partial Benefit Amounts</a>
+                    <a class="nav-item nav-link active" href="contacts.html">State Contacts</a>
+                </span>
                 </div>
             </div>
-        </nav>
+            <nav class="navbar navbar-dark bg-dark dropDownTitle">
+                    <div class="text-white h4 headerTitle">Unemployment Made Easy</div>
+                <button class="navbar-toggler navBarBtnStyle" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span style="font-size: 2rem; color: #fff">
+                        <i class="fas fa-chevron-circle-down"></i>
+                </span>
+                </button>
+            </nav>                   
+
+        </div>
     </div>
 
     <div class="container">
@@ -33,9 +47,9 @@
         <table class="table">
             <thead>
                 <tr>
-                <th scope="col">State</th>
-                <th scope="col">Phone Number</th>
-                <th scope="col">Website</th>
+                <th scope="col" class="theadCol">State</th>
+                <th scope="col" class="theadCol">Phone Number</th>
+                <th scope="col" class="theadCol">Website</th>
                 </tr>
             </thead>
             <tbody class="tableBodyContact">

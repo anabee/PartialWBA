@@ -110,7 +110,7 @@ function californiaCalc(){
     caReductionAmnt.text("Deduction ($25 or 25%): $" +wbaReductionTfCA);
     caEstimatedPWBA.text("Estimated Partial Weekly Benefit Amount: $" +estWBA);
     stimulusAmnt.text("Estimated Partial WBA with CARES Act: $"+careAmntCA)
-    stimulusNote.text("**An additional $600 to each PUA weekly benefit amount you may be eligible to receive, as part of the separate CARES Act Pandemic Additional Compensation program. Only the weeks of a claim between March 29 and July 25* are eligible for the extra $600 payments.");
+    stimulusNote.text("**As a part of the CARES Act Pandemic Additional Compensation program, you may be eligible to receive an additional $600 weekly benefit amount. Only claims filed between March 29 and July 25 are eligible for the extra $600 payments.");
 
 }
 // ************** NEW JERSEY *********************
@@ -171,7 +171,7 @@ function newJerseyCalc(){
     njCrrntEarnings.text("Current Earnings: $" +currentEarningsNJ);
     njEstimatedPWBA.text("Estimated Partial Weekly Benefit Amount: $" +estWBANJ);
     stimulusAmntNJ.text("Estimated Partial WBA with CARES Act: $"+careAmntNJ)
-    stimulusNoteNJ.text("**An additional $600 to each PUA weekly benefit amount you may be eligible to receive, as part of the separate CARES Act Pandemic Additional Compensation program. Only the weeks of a claim between March 29 and July 25* are eligible for the extra $600 payments.");
+    stimulusNoteNJ.text("**As a part of the CARES Act Pandemic Additional Compensation program, you may be eligible to receive an additional $600 weekly benefit amount. Only claims filed between March 29 and July 25 are eligible for the extra $600 payments.");
 
 }
 
@@ -218,6 +218,6 @@ function nevadaCalc(){
     nvCrrntEarnings.text("Weekly Earnings: $" +weeklyearningsNV);
     nvEstimatedPWBA.text("Estimated Partial Weekly Benefit Amount: $" +estWBANV);
     stimulusAmntNV.text("Estimated Partial WBA with CARES Act: $"+careAmntNV)
-    stimulusNoteNV.text("**An additional $600 to each PUA weekly benefit amount you may be eligible to receive, as part of the separate CARES Act Pandemic Additional Compensation program. Only the weeks of a claim between March 29 and July 25* are eligible for the extra $600 payments.");
+    stimulusNoteNV.text("**As a part of the CARES Act Pandemic Additional Compensation program, you may be eligible to receive an additional $600 weekly benefit amount. Only claims filed between March 29 and July 25 are eligible for the extra $600 payments.");
 
 }
