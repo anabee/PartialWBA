@@ -5,6 +5,7 @@
     font-size: 26px;
     padding: 50px 0;
     margin-top: 15px;
+    border: none;
 }
 
 .container-fluid {
@@ -44,7 +45,9 @@ a {
 
 .headerTitle {
     padding-right: 70%;
-    color: #000!important;
+    color: #21a5a4!important;
+    text-shadow: 1px 0.5px #a7b4b5;
+    font-size: 29px;
 }
 
 .dropdownMenuColor {
@@ -60,4 +63,12 @@ a {
     text-align: center!important;
     align-items: center!important;
     justify-content: center!important;
+}
+
+.pageContentInfo {
+    font-size: 21px;
+}
+
+.pageContentTables {
+    font-size: 17px;
 }
