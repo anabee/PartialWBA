@@ -1,11 +1,16 @@
+body {
+    background-color:#f8f8ff!important;
+    font-family: 'Assistant', sans-serif;
+}
+
 .intro {
     /* background: url("./images/bodybkg.png"); */
     /* background-color: #21a5a4!important; */
-    height: 150px;
+    height: 80px;
     text-align: center;
-    font-size: 26px;
-    padding: 50px 0;
-    margin-top: 15px;
+    font-size: 30px;
+    /* padding: 10px 0; */
+    /* margin-top: 15px; */
     border: none;
 }
 
