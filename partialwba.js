@@ -9,10 +9,11 @@ var percentageReduced = $(".percentageReduced");
 var cardHoldingDiv = $(".cardHoldingDiv");
 
 function setUpDropDown(){
-    for (let i = 0; i < wbaArray.length; i++) {
+    var tempArr = [wbaArray[5], wbaArray[34], wbaArray[36]]
+    for (let i = 0; i < tempArr.length; i++) {
         var newOpt = $("<option>");
         
-        $(newOpt).text(wbaArray[i].state)
+        $(newOpt).text(tempArr[i].state)
         $(stateSelection).append(newOpt)
     }
 }
